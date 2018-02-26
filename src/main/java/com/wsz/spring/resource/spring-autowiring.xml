@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd" 
+        default-init-method="init" 
+        default-destroy-method="destroy"
+        default-autowire="constructor">
+	<!-- 上面配置自动装配属性byName byType constructor-->
+	
+	<bean id="autoWiringService" class="com.wsz.spring.autowired.AutoWiringService">
+		<!-- <property name="autoWiringDAO" ref="autoWiringDAO"/> -->
+	</bean>
+	
+	<bean id="autoWiringDAO" class="com.wsz.spring.autowired.AutoWiringDAO"></bean>
+ </beans>
