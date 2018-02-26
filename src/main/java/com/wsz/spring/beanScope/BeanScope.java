@@ -1,4 +1,4 @@
-package com.wsz.spring.bean;
+package com.wsz.spring.beanScope;
 
 public class BeanScope {
 
