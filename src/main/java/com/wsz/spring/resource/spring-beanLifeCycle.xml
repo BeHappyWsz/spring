@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd"
+        default-init-method="init" default-destroy-method="destroy">
+        <!-- 3.上面可以设置全局默认初始化/销毁方法 --> 
+        
+	<!-- 1.配置属性，class类中必须有配置的方法 -->
+	<bean id="beanLifeCycle1" class="com.wsz.spring.beanLifeCycle.BeanLifeCycle1" init-method="start" destroy-method="stop"></bean>
+	<!-- 2.实现接口 -->
+	<bean id="beanLifeCycle2" class="com.wsz.spring.beanLifeCycle.BeanLifeCycle2" ></bean>
+	
+ </beans>
