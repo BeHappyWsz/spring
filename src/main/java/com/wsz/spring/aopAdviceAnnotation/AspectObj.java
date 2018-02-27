@@ -53,4 +53,9 @@ public class AspectObj {
 		}
 		return obj;
 	}
+	
+	@Before("pointcut() && args(arg)")
+	public void beforeWithParam(String arg) {
+		System.out.println("BeforeWithParam:"+arg);
+	}
 }

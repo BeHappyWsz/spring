@@ -9,4 +9,8 @@ public class UserService {
 	public void exec() {
 		throw new RuntimeException("save failed");
 	}
+	
+	public void param(String str) {
+		System.out.println(str);
+	}
 }

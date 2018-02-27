@@ -16,7 +16,8 @@ public class AnnotationAdviceTest extends JunitTestBase{
 	@Test
 	public void test() {
 		UserService bean = super.getBean("userService");
-		bean.save();
+//		bean.save();
+		bean.param("aa");
 //		bean.exec();
 	}
 	
