@@ -18,4 +18,22 @@ public class AnnotationTest extends JunitTestBase{
 		UserService us = super.getBean("userService");
 		us.say();
 	}
+	
+	@Test
+	public void list() {
+		UserService us = super.getBean("userService");
+		us.list();
+	}
+	
+	@Test
+	public void map() {
+		UserService us = super.getBean("userService");
+		us.map();
+	}
+	
+	@Test
+	public void getOne() {
+		UserService us = super.getBean("userService");
+		us.getOne();
+	}
 }
